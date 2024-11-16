@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargar imagen</title>
+  <style>
+    /* Estilo del botón */
+    .download-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Descargar Imagen</h1>
+ 
+
+  <!-- Botón de descarga -->
+  <button class="download-button" onclick="descargarImagen()">Descargar Imagen</button>
+
+  <script>
+    
+    function descargarImagen() {
+      const enlace = document.createElement('a');
+      enlace.href = 'batery.jpg';
+      enlace.download = 'mi-imagen.jpg';
+      enlace.click();
+    }
+  </script>
+</body>
+</html>
