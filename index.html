@@ -34,7 +34,8 @@
     function descargarImagen() {
       const enlace = document.createElement('a');
       enlace.href = 'https://raw.githubusercontent.com/CARNATT/Descargar-Psvita/refs/heads/index/IMG-20241114-WA0067.jpg';
-      enlace.download = 'mi-imagen.jpg';
+      enlace.target = 'mi-imagen.jpg';
+      
       enlace.click();
     }
   </script>
